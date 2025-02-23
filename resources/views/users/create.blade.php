@@ -7,6 +7,9 @@
 			<!--名前-->
 			<label for="name">name</label>
 			<input type="text" name="name" value="{{ old('name') }}">
+      @error('name')
+        <div style="color: red;">{{ $message }}</div>
+      @enderror
 			<!--メールアドレス-->
 			<label for="email">email</label>
 			<input type="text" name="email" value="{{ old('email') }}">
