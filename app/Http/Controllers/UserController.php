@@ -12,7 +12,7 @@ class UserController extends Controller
 {
   public function create()
   {
-    // Log::info('showLoginFormメソッドが実行されました！');
+    // Log::info('Hello, World');
     return view('users.create');
   }
 
