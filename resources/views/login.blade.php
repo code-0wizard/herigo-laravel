@@ -13,5 +13,8 @@
     <input type="password" placeholder="パスワード" name="password">
   </div>
   <button type="submit">ログイン</button>
+  @error('email')
+    <div style="color: red;">{{ $message }}</div>
+  @enderror
 </form>
 @endsection

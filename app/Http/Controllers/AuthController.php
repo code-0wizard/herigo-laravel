@@ -23,11 +23,11 @@ class AuthController extends Controller
 
     if (Auth::attempt($credentials)) {
       $request->session()->regenerate();
-      return redirect()->route('top');
+      return redirect()->intended('/');
     }
 
     return back()->withErrors([
       'email' => 'メールアドレスまたはパスワードが間違っています。',
-    ]);
+    ])->withInput();
   }
 }
