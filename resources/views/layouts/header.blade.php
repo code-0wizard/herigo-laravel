@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'herigo')</title>
     <link rel="stylesheet" href="{{ asset('/css/module/pc_header.scss') }}">
+    @vite('resources/css/app.css')
   </head>
   <header>
   </header>

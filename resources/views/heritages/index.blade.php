@@ -1,1 +1,7 @@
-<h1>世界遺産一覧ページ</h1>
+@extends('layouts.header')
+
+@section('content')
+<h1 class="text-4xl font-bold text-blue-500">
+  Tailwind CSS is working!
+</h1>
+@endsection
