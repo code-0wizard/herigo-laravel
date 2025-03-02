@@ -6,9 +6,12 @@
     @vite('resources/css/app.css')
   </head>
   <header>
-      <a href="{{ route('top') }}" class="w-20 h-15">
-        <img src="{{ asset('images/Herigo_logo.png') }}" alt="サイトのロゴ">
+    <div class="w-[90vw] mx-auto py-[10px] flex items-center bg-white h-[80px] relative transition-all duration-100">
+      <a href="{{ route('top') }}">
+        <img src="{{ asset('images/Herigo_logo.png') }}" alt="サイトのロゴ" style="width: 80px; height: 60px;">
       </a>
+      <a href="{{ route('top') }}" class="font-bold pl-4 text-5xl">Herigo</a>
+    </div>
   </header>
   <body>
     @yield('content')
