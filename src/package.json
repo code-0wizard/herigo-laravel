@@ -1,8 +1,25 @@
 {
-  "name": "docker-test",
-  "version": "1.0.0",
-  "scripts": {
-      "start": "node server.js",
-      "dev": "node server.js"
-  }
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.0.0",
+        "@typescript-eslint/eslint-plugin": "^8.26.0",
+        "@typescript-eslint/parser": "^8.26.0",
+        "@vitejs/plugin-vue": "^5.2.1",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.2.0",
+        "tailwindcss": "^4.0.0",
+        "typescript": "^5.8.2",
+        "vite": "^6.2.1",
+        "vue-tsc": "^2.2.8"
+    },
+    "dependencies": {
+        "@inertiajs/vue3": "^2.0.4",
+        "vue": "^3.5.13"
+    }
 }
